@@ -1,0 +1,64 @@
+/* Reset some default styles */
+body, h2, table {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h2 {
+    color: #006400; /* Dark green color for the heading */
+    text-align: center;
+    padding: 20px 0;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50; /* Green color for header cells */
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray background for even rows */
+}
+
+tr:hover {
+    background-color: #f0f0f0; /* Slightly darker background on hover */
+}
+
+a {
+    text-decoration: none;
+    color: #006400; /* Dark green color for links */
+}
+
+#update, #delete, #song {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+#update:hover, #delete:hover, #song:hover {
+    background-color: #45a049; /* Darker green on hover */
+}

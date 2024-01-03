@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Delete Song</title>
+  <link rel="stylesheet" type="text/css" th:href="@{/css/add song style.css}">
+</head>
+<body>
+
+<div class="container">
+  <h2>Delete Song</h2>
+  <p>Are you sure you want to delete <span th:text="${song.name}"></span></p>
+  <form th:action="@{/delete/{id}(id=${song.id})}" th:object="${song}" method="post">
+    <span><button type="submit">Delete Song</button></span>
+  </form>
+  <br>
+  <a th:href="@{/songs}" role="button">Back</a>
+</div>
+
+</body>
+</html>
