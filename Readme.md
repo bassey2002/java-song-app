@@ -1,6 +1,6 @@
 # Java Project - Music Song App
 
-
+This Song application allows users to manage a collection of songs by providing functionalities to view, add, update and delete songs.
 
 ### Homepage
 ![Alt text](<song home.png>)
