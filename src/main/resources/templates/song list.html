@@ -2,11 +2,11 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Book List</title>
+    <title>Music Library</title>
     <link rel="stylesheet" type="text/css" th:href="@{/css/song list style.css}">
 </head>
 <body>
-<h2>Song List</h2>
+<h2>Library</h2>
 <table>
     <tr>
         <th>ID</th>
@@ -25,6 +25,6 @@
         <td><a th:href="@{/deleteForm/{id}(id=${song.id})}" id="delete">Delete</a></td>
     </tr>
 </table>
-<a th:href="@{/addForm}" id="song">Song</a>
+<a th:href="@{/addForm}" id="song">Add Song</a>
 </body>
 </html>
