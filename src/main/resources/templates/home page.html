@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>My Song App</title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+<!--      background-image: url([[@{/static/images/song-main.jpg}]]);-->
+<!--      background-size: cover;-->
+<!--      background-repeat: no-repeat;-->
+      margin: 10%;
+      padding: 20px;
+    }
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    .button {
+      margin: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 24px;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      width: 150px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    .button:hover {
+      background-color: #3e8e41;
+    }
+    .header {
+      text-align: center;
+      font-size: 60px;
+      color: white;
+      margin-top: 100px;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    .description {
+      text-align: center;
+      font-size: 24px;
+      color: white;
+      margin-top: 20px;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #333333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body th:style="'background-image:url(' + @{/images/song-main.jpg} + '); background-repeat: no-repeat, repeat; background-size: cover;'">
+  <div class="header">My Song App</div>
+  <div class="description">Save and track your favorite songs in one place</div>
+  <div class="button-group">
+    <a th:href="@{/songs}" class="button">Library</a>
+    <a th:href="@{/addForm}" class="button">Add New Song</a>
+  </div>
+  <div class="footer">
+    © 2024 Song App
+  </div>
+</body>
+</html>

@@ -19,6 +19,12 @@ public class SongController
     @Autowired
     private SongRepository songRepository;
 
+    @GetMapping
+    public String showHomePage()
+    {
+        return "home page";
+    }
+
     @GetMapping("/songs")
     public String getAllSongs(Model model)
     {
